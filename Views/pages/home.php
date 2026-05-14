@@ -3,6 +3,7 @@
         <h1>Sản phẩm nổi bật</h1>
 
         <div class="product-list"> 
+            <h1>hahaha</h1>
         </div>
     </section>
 
