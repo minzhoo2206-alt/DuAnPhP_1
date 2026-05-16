@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <?php
-    include 'lab1-bai1.php';
+    <h1 class="text1">Product List</h1>
 
-    foreach ($product as $item) {
-        echo "<div>";
-        echo "<h2>" . $item['name'] . "</h2>";
-        echo "<p>Price: $" . $item['price'] . "</p>";
-        echo "<img src='" . $item['img'] . "' alt='" . $item['name'] . "' style='width:200px;'>";
-        echo "<p>" . $item['desc'] . "</p>";
-        echo "</div><hr>";
-    }
+    <div class="container">
+        <?php
+        include 'lab1-bai1.php';
+        ?>
+        <div class="product-list">
+            <?php foreach ($product as $item) : ?>
+                <div class="product-item">
+                    <h2><?php echo $item['name']; ?></h2>
+                    <p>Price: $<?php echo $item['price']; ?></p>
+                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['name']; ?>" style="width:200px;">
+                    <p><?php echo $item['desc']; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 
-    ?>
 
 
 </body>

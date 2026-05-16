@@ -8,7 +8,7 @@ $product = [
         "desc" => "Máy tính giá rẻ"
     ],
     [
-        "name" => "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-note-20-ultra-5g.png",
+        "name" => "Samsung Galaxy Note 20 Ultra",
         "price" => 500,
         "img" => "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-note-20-ultra-5g.png",
         "desc" => "Điện thoại thông minh"
