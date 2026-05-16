@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
 
     <h1 class="text1">Product List</h1>
 
@@ -27,9 +28,12 @@
             <?php endforeach; ?>
         </div>
     </div>
+    <br>
 
 
 
 </body>
 
 </html>
+<?php
+include_once "bai2_lab1/login.php";
