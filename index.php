@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product List</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <h1 class="text1">Product List</h1>
+    <h1 class="text1">Danh sách sản phẩm</h1>
 
     <div class="container">
         <?php
@@ -20,16 +19,20 @@
             <?php foreach ($product as $item) : ?>
                 <div class="product-item">
                     <h2><?php echo $item['name']; ?></h2>
-                    <p>Price: $<?php echo $item['price']; ?></p>
-                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['name']; ?>" style="width:200px;">
-                    <p><?php echo $item['desc']; ?></p>
+                    <b>Giá: $<?php echo $item['price']; ?></b>
+                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['name']; ?>">
+                    <h4><?php echo $item['desc']; ?></h4>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
 
-
-
+    <div class="forms-layout">
+        <?php
+        include 'lab1-bai2.php';
+        include 'lab1-bai3.php';
+        ?>
+    </div>
 </body>
 
 </html>
